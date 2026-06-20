@@ -1,0 +1,10 @@
+[user]
+	name = Bom Kim
+	email = 154527083+bomkim-web@users.noreply.github.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[core]
+	excludesfile = /Users/bomkim/.gitignore_global
+	editor = code --wait
