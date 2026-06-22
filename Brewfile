@@ -30,6 +30,8 @@ brew "lazygit"
 brew "mas"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Deep clean and optimize your Mac
+brew "mole"
 # Painless compression and decompression for your terminal
 brew "ouch"
 # Modern replacement for ps written in Rust
@@ -108,6 +110,7 @@ mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "RunCat", id: 1429033973
 vscode "bracketpaircolordlw.bracket-pair-color-dlw"
+vscode "charliermarsh.ruff"
 vscode "christian-kohler.path-intellisense"
 vscode "emilast.logfilehighlighter"
 vscode "esbenp.prettier-vscode"
@@ -127,6 +130,7 @@ vscode "ms-vscode.live-server"
 vscode "naumovs.color-highlight"
 vscode "netcorext.uuid-generator"
 vscode "oderwat.indent-rainbow"
+vscode "openai.chatgpt"
 vscode "pkief.material-icon-theme"
 vscode "redhat.vscode-yaml"
 vscode "ritwickdey.liveserver"
