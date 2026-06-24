@@ -86,14 +86,14 @@ cask "iterm2"
 cask "jordanbaird-ice"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Team communication and collaboration software
 cask "slack"
 # Video game digital distribution service
 cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
-# Rust-based terminal
-cask "warp"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
@@ -105,8 +105,8 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Pixelmator Pro", id: 1289583905
 mas "RunCat", id: 1429033973
 vscode "bracketpaircolordlw.bracket-pair-color-dlw"
@@ -143,3 +143,4 @@ vscode "vivaxy.vscode-conventional-commits"
 vscode "vscodevim.vim"
 vscode "vunguyentuan.vscode-css-variables"
 vscode "wholroyd.jinja"
+npm "corepack"
