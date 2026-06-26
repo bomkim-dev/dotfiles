@@ -1,46 +1,18 @@
+# --- Homebrew ---
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
-
+# --- Google Cloud SDK ---
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/bomkim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bomkim/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/bomkim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bomkim/google-cloud-sdk/completion.zsh.inc'; fi
 
-# === Ghostty Terminal Setup ===
-# Initialized by setup.sh
-
-# source "/Users/bomkim/.config/ghostty-setup/zsh.env"
-
-# Ghostty Terminal Setup - Zsh Configuration
-# This file is sourced by .zshrc
-
-# --- zsh-autosuggestions Configuration ---
-# Fish-like autosuggestions based on history
-
-# Optimization: Limit buffer size for better performance
-# export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-
-# Enable async mode for faster suggestions
-# export ZSH_AUTOSUGGEST_USE_ASYNC=1
-
-# Customize suggestion color (subtle gray)
-# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6c7086"
-
-# Suggest from history and completion
-# export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
-# --- zsh-syntax-highlighting Configuration ---
-# Must be loaded AFTER zsh-autosuggestions
+# --- Zsh Plugins ---
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# loading plugins
+# --- Shell Tools ---
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
@@ -48,79 +20,37 @@ eval "$(mise activate zsh)"
 eval "$(direnv hook zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
 
-# --- fzf Configuration ---
-# Set up fzf key bindings and fuzzy completion
-# Fuzzy finder for files, history, and more
+# --- fzf ---
 source <(fzf --zsh)
 
-# PET snippet manager
-# export PET_CONFIG="$HOME/.config/pet/config.toml"
-
-# Configure fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --icons --color=always --tree --level=2 {}'"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude '.git'"
 
-# --- delta (Git Pager) Configuration ---
-# Syntax highlighting for git diffs - run once on setup, not every shell load
-# git config --global core.pager "delta"
-# git config --global delta.syntax-theme "gruvbox-dark"
-# git config --global delta.line-numbers true
-# git config --global delta.side-by-side true
-
-# --- zellij Configuration ---
-# Terminal workspace (modern tmux alternative)
-# eval "$(zellij setup --generate-completion zsh)"
-alias zj='zellij'
+# --- Aliases: Zellij ---
 alias zja='zellij attach'
 alias zjn='zellij new-session -d'
 
-# --- gitui Configuration ---
-# Git TUI - fast git UI in Rust
-# alias gu='gitui'
-
-# --- procs Configuration ---
-# Modern ps replacement
-alias ps='procs'
-
-# --- bottom (btm) Configuration ---
-# Modern system monitor - run with: btm
-alias btm='bottom'
-
-# --- tealdeer Configuration ---
-# Fast tldr client - run with: tldr <command>
-
-# --- tokei Configuration ---
-# Code statistics - run with: tokei <directory>
-
-# --- ouch Configuration ---
-# All-in-one compression tool
-alias ouch-decompress='ouch d'
-alias ouch-compress='ouch c'
-
-# Use eza instead of ls
+# --- Aliases: Modern CLI Tools ---
 alias ls='eza --icons --group-directories-first'
 alias ll='eza -l --icons --group-directories-first'
 alias la='eza -la --icons --group-directories-first'
 alias lt='eza --tree --level=2 --icons'
-
-# General aliases
 alias cat='bat --style=auto'
 alias find='fd'
+alias ps='procs'
+alias btm='bottom'
+alias ouch-decompress='ouch d'
+alias ouch-compress='ouch c'
+
+# --- Aliases: Navigation ---
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Set default editor
+# --- Editor ---
 export EDITOR='code --wait'
 export VISUAL='code --wait'
 
-# Enable color support
-# export CLICOLOR=1
-# export LSCOLORS=ExFxBxDxCxegedabagacad
-
-# Set language
-# export LANG=en_US.UTF-8
-# export LC_ALL=en_US.UTF-8
-
+# --- Environment ---
