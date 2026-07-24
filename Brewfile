@@ -70,11 +70,14 @@ cask "codex"
 cask "codex-app"
 # System-wide audio equaliser
 cask "eqmac"
+cask "font-d2coding-nerd-font"
 cask "font-gothic-a1"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-monaspace"
 cask "font-noto-sans-jp"
 cask "font-noto-sans-kr"
+cask "font-pretendard"
+cask "font-pretendard-jp"
 cask "font-source-code-pro"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
@@ -98,6 +101,8 @@ cask "slack"
 cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
+# Menu bar app for USB-C cable diagnostics
+cask "whatcable"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
@@ -107,15 +112,16 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
-mas "Numbers", id: 361304891
 mas "Numbers", id: 409203825
-mas "Pages", id: 361309726
+mas "Numbers", id: 361304891
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Pixelmator Pro", id: 1289583905
-mas "RunCat", id: 1429033973
+mas "RunCatNeo", id: 6757801838
 vscode "bracketpaircolordlw.bracket-pair-color-dlw"
 vscode "charliermarsh.ruff"
 vscode "christian-kohler.path-intellisense"
+vscode "codeium.codeium"
 vscode "emilast.logfilehighlighter"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-close-tag"
