@@ -62,6 +62,8 @@ cask "1password"
 cask "betterdisplay"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
@@ -79,6 +81,7 @@ cask "font-noto-sans-kr"
 cask "font-pretendard"
 cask "font-pretendard-jp"
 cask "font-source-code-pro"
+cask "font-udev-gothic-nf"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
@@ -109,8 +112,8 @@ mas "1Password for Safari", id: 1569813296
 mas "GarageBand", id: 682658836
 mas "Home Assistant", id: 1099568401
 mas "iMovie", id: 408981434
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
@@ -121,7 +124,6 @@ mas "RunCatNeo", id: 6757801838
 vscode "bracketpaircolordlw.bracket-pair-color-dlw"
 vscode "charliermarsh.ruff"
 vscode "christian-kohler.path-intellisense"
-vscode "codeium.codeium"
 vscode "emilast.logfilehighlighter"
 vscode "esbenp.prettier-vscode"
 vscode "formulahendry.auto-close-tag"
@@ -146,6 +148,7 @@ vscode "redhat.vscode-yaml"
 vscode "ritwickdey.liveserver"
 vscode "rust-lang.rust-analyzer"
 vscode "shd101wyy.markdown-preview-enhanced"
+vscode "supermaven.supermaven"
 vscode "svelte.svelte-vscode"
 vscode "usernamehw.errorlens"
 vscode "vincaslt.highlight-matching-tag"
