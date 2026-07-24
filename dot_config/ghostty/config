@@ -1,27 +1,28 @@
 # --- Typography ---
-font-family = JetBrainsMono Nerd Font
-font-family = Noto Sans JP
-font-family = Noto Sans KR
+font-family = JetBrainsMono Nerd Font Mono
+font-family = D2CodingLigature Nerd Font Mono
+font-family = UDEV Gothic NF
 font-size = 14
 font-thicken = true
-adjust-cell-height = 2
+font-thicken-strength = 20
+adjust-cell-width = -1
+adjust-cell-height = 1
 
 # --- Theme and Colors ---
 theme = light:Github Light Colorblind,dark:Github Dark Colorblind
+minimum-contrast = 1.1
 
 # --- Window and Appearance ---
-background-opacity = 0.9
-background-blur-radius = 20
-macos-titlebar-style = transparent
+background-opacity = 0.94
+background-blur = 20
+macos-titlebar-style = tabs
 window-padding-x = 10
 window-padding-y = 8
 window-save-state = always
-window-theme = auto
 
 # --- Cursor ---
-cursor-style = bar
-cursor-style-blink = true
-cursor-opacity = 0.8
+cursor-style = block
+cursor-style-blink = false
 
 # --- Mouse ---
 mouse-hide-while-typing = true
@@ -32,8 +33,9 @@ copy-on-select = clipboard
 quick-terminal-position = top
 quick-terminal-size = 45%
 quick-terminal-screen = mouse
-quick-terminal-autohide = true
 quick-terminal-animation-duration = 0.15
+quick-terminal-autohide = true
+quick-terminal-space-behavior = move
 
 # --- Security ---
 clipboard-paste-protection = true
@@ -44,6 +46,9 @@ shell-integration = detect
 shell-integration-features = cursor,sudo,title,ssh-env
 
 # --- Keybindings ---
+
+macos-option-as-alt = left
+
 # Tabs
 keybind = cmd+t=new_tab
 keybind = cmd+shift+left=previous_tab
@@ -74,5 +79,5 @@ keybind = cmd+shift+f=toggle_split_zoom
 keybind = cmd+shift+comma=reload_config
 
 # --- Performance ---
-# Generous scrollback (25MB)
-scrollback-limit = 25000000
+# Generous scrollback (10MiB)
+scrollback-limit = 10485760
