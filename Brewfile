@@ -1,3 +1,4 @@
+tap "giammarco-ferranti/deja", "https://github.com/Giammarco-Ferranti/homebrew-deja"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -52,10 +53,10 @@ brew "yazi"
 brew "zellij"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Fish-like fast/unobtrusive autosuggestions for zsh
-brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Predictive inline shell autosuggestions for zsh.
+brew "giammarco-ferranti/deja/deja", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Display management tool
@@ -68,8 +69,6 @@ cask "claude"
 cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# OpenAI's Codex desktop app for managing coding agents
-cask "codex-app"
 # System-wide audio equaliser
 cask "eqmac"
 cask "font-d2coding-nerd-font"
