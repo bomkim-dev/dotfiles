@@ -9,16 +9,16 @@ if [ -f '/Users/bomkim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bomkim/g
 if [ -f '/Users/bomkim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bomkim/google-cloud-sdk/completion.zsh.inc'; fi
 
 # --- Zsh Plugins ---
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # --- Shell Tools ---
-eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-eval "$(starship init zsh)"
-eval "$(mise activate zsh)"
+eval "$(deja init zsh)"
 eval "$(direnv hook zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
+eval "$(mise activate zsh)"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 # --- fzf ---
 source <(fzf --zsh)
@@ -52,5 +52,3 @@ alias ....='cd ../../..'
 # --- Editor ---
 export EDITOR='code --wait'
 export VISUAL='code --wait'
-
-# --- Environment ---
