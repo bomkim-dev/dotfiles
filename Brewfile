@@ -108,6 +108,7 @@ cask "whatcable"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
+mas "Balatro", id: 6502451661
 mas "GarageBand", id: 682658836
 mas "Home Assistant", id: 1099568401
 mas "iMovie", id: 408981434
@@ -116,8 +117,8 @@ mas "Keynote", id: 361285480
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Numbers", id: 361304891
-mas "Pages", id: 409201541
 mas "Pages", id: 361309726
+mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "RunCatNeo", id: 6757801838
 vscode "bracketpaircolordlw.bracket-pair-color-dlw"
